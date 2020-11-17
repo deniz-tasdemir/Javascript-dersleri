@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Lesson seven sabit değer örnek</title>
+    <body> 
+        <div id="result"></div>
+        <script> 
+    var x,y,z, a,b,person;
+   
+    a=" " //nul string /*a değişkeni burda hem string hemde boş bir değeri var*/
+    person={firstName:"Fehmi",lastName:"UYAR"};
+    person=null; //nesneye boş değer atarsak nesnenin içini boşaltmış oluruz.
+    document.getElementById("result").innerHTML= typeof {firstName:"Fehmi",lastName:"UYAR"} /* nesnelerin türü objectir.*/
+    +"<br>"+
+    typeof null + "<br>"+  // null türü objectir.
+    typeof [5,10,15,20] + "<br>"+ // array dizilerin türü objectir.
+    typeof function test(){} + "<br>"; // function ların türü functiondur.
+
+        </script>
+        </body>
+        </html>
+
+     

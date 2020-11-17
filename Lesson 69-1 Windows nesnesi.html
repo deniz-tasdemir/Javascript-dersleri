@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css">
+    <title>Lesson seven sabit değer örnek</title>
+    <body> 
+     <button type="button" class="btn btn-primary" onclick="openWindow()">New Open Window</button>
+     <button type="button" class="btn btn-primary" onclick="resizeWindow()">Resize Window</button>
+     <button type="button" class="btn btn-primary" onclick="moveWindow()">Move Window</button>
+     <button type="button" class="btn btn-primary" onclick="closeWindow()">Close Window</button>
+    <p id="result" class="alert-dark text-white"></p>   
+
+   
+        <script>
+       var result,newWindow;
+       result=document.getElementById("result");
+
+       function openWindow(){
+        newWindow=window.open("","newWindow","width=600,height=400");
+       newWindow.document.write("Bu pencere javascript tarafından açıldı");
+       }
+       function resizeWindow(){
+        newWindow.resizeTo(1000,800);
+        }
+        function moveWindow(){
+        newWindow.moveTo(450,150);
+        }
+        function closeWindow(){
+        newWindow.close();
+       }     
+    </script>
+     </body>
+    </html>
+
+ 

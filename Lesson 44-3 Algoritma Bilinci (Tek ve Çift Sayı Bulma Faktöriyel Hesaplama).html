@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Lesson seven sabit değer örnek</title>
+    <body>
+     <div id="result"></div>  
+     <input type="text" id="takeNumber">   
+  <button type="button" style="margin-left:10px;" onClick="Show()">Hesapla</button> 
+ <script>
+function Show () {
+    
+var take,i,faktor=1;
+take=Number(document.getElementById('takeNumber').value);
+for (i=1;i<=take;i++){
+faktor*=i; //faktor= faktor*i
+}
+    
+    document.getElementById('result').innerHTML=faktor;
+            }
+ </script>
+  </body>
+ </html>
+
+
+
+     

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Lesson seven sabit değer örnek</title>
+    <body>
+     <div id="result"></div>  
+  <button type="button" style="margin-left:10px;" onClick="Show()">Hangi Gün</button> 
+ <script>
+
+function Show() {
+
+    var day;
+    var d=new Date().getDay();
+    switch (d) {
+        case 0: day="Pazar";break;
+        case 1: day="Pazartesi";break;
+        case 2: day="Salı";break;
+        case 3: day="Çarşamba";break;
+        case 4: day="Perşembe";break;
+        case 5: day="Cuma";break;
+        case 6: day="Cumartesi";break;
+        default: day="Böyle bir gün yok";   
+           
+        }
+
+document.getElementById('result').innerHTML=day;
+}
+ 
+</script>
+  </body>
+ </html>
+
+
+
+     

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Lesson seven sabit değer örnek</title>
+    <body>
+     <div id="result"></div>
+     <p style="margin-left:10px;"><input type="text" id="midterm"></p>
+     <p style="margin-left:10px;"><input type="text" id="final"></p>
+  <button type="button" style="margin-left:10px;" onClick="noteResult()">Sonuç</button> 
+ <script>
+
+function noteResult() {
+ var midtermNote,finalNote,message,average;
+ midtermNote=(document.getElementById('midterm').value);
+ finalNote=(document.getElementById('final').value);
+ average="konuş"+"mak";
+
+ if(isNaN(midtermNote)){
+message="vize notunu sayısal bir değer girmelisiniz";
+ }else if (isNaN(finalNote)){
+    message="Final notunu sayısal bir değer girmelisiniz"; 
+}else{
+ if (average="konuşmak") {
+    message="Dersten kaldınız. sonucunuz:FF";
+}else if (average>=45 && average<=60) {
+    message="sonucunuz:DD";
+   }
+else if (average>60 && average<=80) {
+    message="sonucunuz:CC";
+   }
+else if (average>80 && average<=90) {
+    message="sonucunuz:BB";
+   }
+else if (average>90 && average<=100) {
+    message=". sonucunuz:AA";
+    }else{
+     message="girilen veriler not sistemi aralığında değildir.Lütfen 0-100 arasında bir not girin"
+ }
+}
+document.getElementById('result').innerHTML=message;
+}
+ 
+</script>
+  </body>
+ </html>
+
+
+
+     

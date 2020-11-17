@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Lesson seven sabit değer örnek</title>
+    <body>
+     <div id="result"></div>        
+ <script>
+var x;
+        document.getElementById('result').innerHTML=
+        "Javascript:" + typeof "Javascript:"+"<br>"+ //Türü string
+        "7:" + typeof  (7)+"<br>"+ //Türü Number
+        "3.14" + typeof (3.14) +"<br>"+ //Türü Number
+        "Nan:" + typeof NaN +"<br>"+ // Not a Number türü Türü Number
+        "true:" + typeof true +"<br>"+ //Türü Boolean
+        "[0,5,10,15]:" + typeof [0,5,10,15] +"<br>"+ // Arrayler  Türü Object yani Nesnedir
+        "{name:'Asus',ram:'16gb',HDD:'SSD'}:" + typeof  {name:'Asus',ram:'16gb',HDD:'SSD'} + "<br>"+ //Nesnelerin Türü Nesnedir.
+        "new Date():" + typeof new Date() +"<br>"+ //Tarih Türü Nesnedir.
+        "function(){}:" + typeof function(){} +"<br>"+ //functionlar türü fonksiyondur.
+        "null:" + typeof null +"<br>"+ // null boş değeri türü object yani nesnedir. 
+        "x değişkeni:" + typeof x + "<br>"; //  x değişkeni içinde veri olmadığı için undefined yani tanımsızdır.
+
+      </script>
+  </body>
+ </html>
+
+
+
+     

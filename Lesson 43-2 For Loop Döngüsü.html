@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Lesson seven sabit değer örnek</title>
+    <body>
+     <div id="result"></div>  
+  <button type="button" style="margin-left:10px;" onClick="Show()">Start Loop</button> 
+ <script>
+
+function Show() {
+var i,text=""; 
+var langs=[
+    "PHP",
+    "Asp.Net",
+    "jSP",
+    "Coldfusion",
+    "Node JS",
+    "java",
+    "c#",
+    "javascript",
+    "Angular JS",
+    "React JS",
+    "JQUERY",
+    "Vue JS",
+    "MySQL",
+]
+for (i=6;i<langs.length;i++){
+    text+=langs[i]+"<br>";
+}
+        document.getElementById('result').innerHTML=text;
+            }
+ </script>
+  </body>
+ </html>
+
+
+
+     

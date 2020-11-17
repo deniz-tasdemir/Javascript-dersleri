@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Lesson seven sabit değer örnek</title>
+    <body>
+     <div id="result"></div>
+   <!-- <button type="button" onClick="sortArray()">Sırala</button> -->
+     <div id="result2"></div>
+    <script>
+    var langs=[
+        "PHP",
+        "Asp.Net",
+        "JSP",        
+        "NodeJS",
+        "JavaScript",
+        "Angular JS",
+        "React JS",
+        "Vue JS",    
+        "HTML 5",
+        "CSS3"
+        ];
+        var pc=[
+            {type:"Asus",ram:"16gb",year:2016}, 
+            {type:"MSI",ram:"12gb",year:2018},
+            {type:"HP",ram:"32gb",year:2013}
+            ];  
+            Show('result',
+            pc[0].type+"-"+pc[0].ram+"-"+pc[0].year+"<br>"+
+            pc[1].type+"-"+pc[0].ram+"-"+pc[0].year+"<br>"+
+            pc[2].type+"-"+pc[0].ram+"-"+pc[0].year);
+            
+
+         function MaxArray(take) {
+          //dizilerde maksimum değeri bulan fonksiyon
+          return Math.min.apply(null,take);
+      }
+      function MinArray(take) {
+         //dizilerde minimum değeri bulan fonksiyon     
+         return Math.min.apply(null,take);
+      }
+   
+         function Show(par1,par2) {          
+          document.getElementById(par1).innerHTML=par2;
+         }
+        
+       </script>
+  </body>
+ </html>
+
+
+     

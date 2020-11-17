@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Lesson seven sabit değer örnek</title>
+    <body> 
+        <p id="result"></p>
+        <button type="button" id=externalJS>Call JS</button>
+   
+        <script>
+        var getJS=document.getElementById('externalJS'); //Getjs adlı değişkenimize butonu atamış olduk.
+        getJS.onclick=function(){ // Butona tıklandığı anda şu fonksiyonu çalıştır dedik.
+
+        var scriptCreate=document.createElement("script"); //script elementi oluştur dedik
+        scriptCreate.type="text/Javascript";
+        scriptCreate.src="../js/message.js";
+         document.body.appendChild(scriptCreate); 
+     }
+    </script>
+     </body>
+    </html>
+
+ 
