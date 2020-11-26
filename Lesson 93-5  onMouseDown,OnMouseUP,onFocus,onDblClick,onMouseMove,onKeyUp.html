@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Lesson 88 | JS Lesson //</title>
+
+    <style>
+        #demo {
+            width: 200px;
+            height: 60px;
+            color: white;
+            background-color: crimson;
+            padding: 16px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-3">
+        <p id="result"></p>
+        <input type="text" id="username" name="username">
+    </div>
+    <script>
+        var result = document.querySelector('#result');
+        var username = document.querySelector('#username');
+        username.onkeypress = function() {
+            result.innerHTML = "onkeydown:Klavyede bir tuşa tıkladın";
+        }
+        username.onkeyup = function() {
+            result.innerHTML = "onkeyup:o tuştan elini çektin";
+        }
+    </script>
+</body>
+
+</html>

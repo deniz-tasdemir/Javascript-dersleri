@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Lesson 88 | JS Lesson //</title>
+
+    <style>
+        .Div1,
+        .Div2 {
+            color: white;
+            background-color: #4D4924;
+            padding: 20px;
+            border: 2px solid black;
+            margin-left: -30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-3">
+        <div class="Div1">
+            <p id="p1">Ben kabarcıklana olayıyım</p>
+        </div><br>
+        <div class="container-fluid mt-3">
+            <div class="Div2">
+                <p id="p2">Ben yakalama olayıyım</p>
+            </div>
+
+            <script>
+                var p1, p2, Div1, Div2;
+                p1 = document.querySelector('#p1');
+                p2 = document.querySelector('#p2');
+                Div1 = document.querySelector('.Div1');
+                Div2 = document.querySelector('.Div2');
+
+                p1.addEventListener("click", function() {
+                    alert("p1 paragrafına tıkladın");
+                }, false);
+                Div1.addEventListener("click", function() {
+                    alert("Div1 elementine tıkladın");
+                }, false);
+                p2.addEventListener("click", function() {
+                    alert("p2 paragrafına tıkladın");
+                }, true);
+                Div2.addEventListener("click", function() {
+                    alert("Div2 elementine tıkladın");
+                }, true);
+            </script>
+</body>
+
+</html>
