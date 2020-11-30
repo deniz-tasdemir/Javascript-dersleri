@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title id="title">HTML DOM | JS Lesson </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid mt-3" id="DivParent">
+
+        <p id="p1">Angular JS</p>
+        <p id="p2">React JS</p>
+        <p id="p3">Vue JS</p>
+        <p id="p4">Node JS</p>
+    </div>
+    <div class="container-fluid ">
+        <button type="button" class="btb btn-dark" onclick="javascript:createElementDOM()">Element Ekle</button>
+        <button type="button" class="btb btn-dark" onclick="javascript:removeElementDOM()">Element Kaldır</button>
+        <button type="button" class="btb btn-dark" onclick="javascript:replaceElementDOM()">Element Değiştir</button>
+
+    </div>
+    <script>
+        var parentDiv = document.querySelector('#DivParent');
+        var p3 = document.querySelector('#p3');
+
+        function createElementDOM() {
+            var p = document.createElement("p");
+            var text = document.createTextNode('Javascript');
+            p.appendChild(text);
+            parentDiv.insertBefore(p, p3);
+        }
+
+        function removeElementDOM() {
+            p3.parentNode.removeChild(p3);
+
+        }
+    </script>
+</body>
+
+</html>
